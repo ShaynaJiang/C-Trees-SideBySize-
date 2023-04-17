@@ -1,12 +1,12 @@
 #include <stdio.h>
-
+//未更改顏色版本 
 void print_tree(int height, int row){
 	int i; 
 	if(row < height){ 
 		//drow leaves
 		for(i=1-height; i<height; i++){
 			printf(-row<=i && i<=row ? "*" : "-"); 
-		}//i:-2~2,row=0,i==0時,'*' 
+		}
 	}
 	else if(row < height+height/2){
 		//drow drunk
@@ -36,7 +36,7 @@ int main() {
         }
     }while (is_repeat); 
     
-	//find maxmum height 
+	//find the max height 
 	int max = 0;
     for (i=0; i<3; i++) {
         if (tree_H[i] > max) {
